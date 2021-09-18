@@ -1,0 +1,7 @@
+new Promise(function(resolve, reject) {
+    setTimeout(() => {
+    throw new Error("Whoops!");
+    }, 1000);
+}).catch(alert);
+
+// No retorn the catch because It's not present into the function
